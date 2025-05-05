@@ -13,6 +13,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content="Party.net" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="google-site-verification" content="sN6PbI5xAl9w5Mw0202LwMrmGDZCBbkcr6UgdWLYupI" />
       </Head>
       
       <header className={styles.header}>

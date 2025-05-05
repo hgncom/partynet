@@ -1,0 +1,93 @@
+.relatedPostsSection {
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.relatedPostsHeading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.relatedPostsHeading:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ff6b6b;
+}
+
+.relatedPostsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.relatedPostCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.relatedPostCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.relatedPostLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.relatedPostImageContainer {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.relatedPostContent {
+  padding: 1.2rem;
+}
+
+.relatedPostTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.relatedPostExcerpt {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.readMoreLink {
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .relatedPostsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .relatedPostsGrid {
+    grid-template-columns: 1fr;
+  }
+}

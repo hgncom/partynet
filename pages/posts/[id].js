@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData, getSortedPostsData } from '../../lib/posts';
 import Layout from '../../components/layout';
-import ArticleBanner from '../../components/ArticleBanner';
 import ArticleMeta from '../../components/ArticleMeta';
-import RelatedPosts from '../../components/RelatedPosts';
-import AuthorBio from '../../components/AuthorBio';
 import SchemaMarkup from '../../components/SchemaMarkup';
+import EnhancedRelatedPosts from '../../components/EnhancedRelatedPosts';
+import OptimizedImage from '../../components/OptimizedImage';
+import AuthorBio from '../../components/AuthorBio';
 import styles from '../../components/ArticleContent.module.css';
 import navStyles from '../../styles/post-navigation.module.css';
 
@@ -77,10 +77,12 @@ export default function Post({ postData }) {
         </div>
       </div>
       
-      <div className={navStyles['related-posts']}>
-        <h2>You might also enjoy</h2>
-        {/* Related posts would go here */}
-      </div>
+      {/* Enhanced Related Posts with intelligent tag matching */}
+      <EnhancedRelatedPosts 
+        currentPostId={postData.id} 
+        currentTags={postData.tags || []} 
+        allPosts={postData.allPosts || []} 
+      />
     </Layout>
   );
 }
@@ -95,9 +97,16 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  const allPosts = getSortedPostsData();
+  
+  // Add all posts to the postData for related posts component
+  postData.allPosts = allPosts;
+  
   return {
     props: {
       postData,
     },
+    // Revalidate every 24 hours for incremental static regeneration
+    revalidate: 86400,
   };
 }
