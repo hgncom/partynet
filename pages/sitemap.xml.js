@@ -3,7 +3,7 @@ import { getAllPostIds } from '../lib/posts';
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-  const baseUrl = 'https://party.net';
+  const baseUrl = 'https://partynet.netlify.app';
   const posts = getAllPostIds().map(post => post.params.id);
   
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

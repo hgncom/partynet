@@ -6,6 +6,7 @@ excerpt: >
   Planning the perfect birthday party doesn't have to be stressful. Follow our comprehensive 15-step guide to create
   a memorable celebration for any age group, from choosing the perfect theme to handling day-of logistics.
 featuredImage: 'https://images.unsplash.com/photo-1583875762487-5f8f7c718d14?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Colorful birthday party setup with balloons, cake, and decorations for a celebration'
 tags: ['birthday party', 'party planning', 'celebration tips', 'event organization']
 ---
 

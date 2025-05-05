@@ -5,6 +5,7 @@ author: 'Party Planning Expert'
 excerpt: >
   Discover how to throw a stunning garden party any time of year! This guide covers planning, decor, food, weather-proofing, and fun ideas for unforgettable outdoor celebrations—plus pro tips and checklists.
 featuredImage: 'https://plus.unsplash.com/premium_photo-1664471481559-5bad8c5b122f?q=80&w=3388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Elegant outdoor garden party setting with table decorations and natural greenery'
 tags: ['garden party', 'outdoor events', 'party planning', 'seasonal parties']
 ---
 

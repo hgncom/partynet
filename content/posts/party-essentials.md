@@ -5,6 +5,7 @@ author: 'Party Planning Expert'
 excerpt: >
   Never forget a crucial party item again! This comprehensive checklist covers all the essential elements for any successful celebration—from invitations and decorations to food, entertainment, and those easily overlooked details that make all the difference.
 featuredImage: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Organized party planning checklist with essential items and preparation notes'
 tags: ['party essentials', 'party planning', 'party checklist', 'celebration tips']
 ---
 

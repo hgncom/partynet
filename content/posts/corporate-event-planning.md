@@ -5,6 +5,7 @@ author: 'Party Planning Expert'
 excerpt: >
   Transform standard business functions into memorable corporate events that achieve your objectives while engaging attendees. From team-building activities to client appreciation gatherings, discover how to plan professional events with personality and purpose.
 featuredImage: 'https://plus.unsplash.com/premium_photo-1661497675847-2075003562fd?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Professional corporate event setup with elegant table arrangements and business atmosphere'
 tags: ['corporate', 'corporate event', 'business gathering', 'professional event']
 ---
 

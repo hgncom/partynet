@@ -5,6 +5,7 @@ author: 'Party Planning Expert'
 excerpt: >
   Transform your party space with these quick, budget-friendly DIY decorations. From elegant centerpieces to festive backdrops, these creative projects require minimal supplies and time—perfect for last-minute celebrations!
 featuredImage: 'https://images.unsplash.com/photo-1610731857462-8b2ab2b9b367?q=80&w=3231&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Colorful DIY party decorations including handmade paper crafts and festive elements'
 tags: ['DIY party', 'party decorations', 'budget party', 'party planning']
 ---
 

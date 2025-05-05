@@ -5,6 +5,7 @@ author: 'Party Planning Expert'
 excerpt: >
   Create a memorable wedding celebration with our comprehensive planning guide. From engagement parties to the reception, discover tips for venues, decor, timelines, and personal touches that reflect your unique love story.
 featuredImage: 'https://images.unsplash.com/photo-1548088615-0795daa548c9?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImageAlt: 'Elegant wedding celebration with beautiful floral arrangements and romantic atmosphere'
 tags: ['wedding', 'wedding celebration', 'wedding planning', 'reception']
 ---
 

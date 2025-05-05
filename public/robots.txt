@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://partynet.netlify.app/sitemap.xml

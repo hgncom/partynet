@@ -6,6 +6,7 @@ import ArticleBanner from '../../components/ArticleBanner';
 import ArticleMeta from '../../components/ArticleMeta';
 import RelatedPosts from '../../components/RelatedPosts';
 import AuthorBio from '../../components/AuthorBio';
+import SchemaMarkup from '../../components/SchemaMarkup';
 import styles from '../../components/ArticleContent.module.css';
 import navStyles from '../../styles/post-navigation.module.css';
 
@@ -21,49 +22,18 @@ export default function Post({ postData }) {
         <meta property="og:description" content={postData.excerpt} />
         <meta property="og:image" content={postData.featuredImage || '/images/party-default.jpg'} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://party.net/posts/${postData.id}`} />
+        <meta property="og:url" content={`https://partynet.netlify.app/posts/${postData.id}`} />
         {/* Canonical Tag */}
-        <link rel="canonical" href={`https://party.net/posts/${postData.id}`} />
+        <link rel="canonical" href={`https://partynet.netlify.app/posts/${postData.id}`} />
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={postData.title} />
         <meta name="twitter:description" content={postData.excerpt} />
         <meta name="twitter:image" content={postData.featuredImage || '/images/party-default.jpg'} />
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              'headline': postData.title,
-              'description': postData.excerpt,
-              'image': postData.featuredImage || '/images/party-default.jpg',
-              'author': {
-                '@type': 'Person',
-                'name': postData.author || 'Party Planning Expert'
-              },
-              'datePublished': postData.date,
-              'dateModified': postData.date,
-              'publisher': {
-                '@type': 'Organization',
-                'name': 'Party.net',
-                'logo': {
-                  '@type': 'ImageObject',
-                  'url': 'https://party.net/images/logo.png'
-                }
-              },
-              'mainEntityOfPage': {
-                '@type': 'WebPage',
-                '@id': `https://party.net/posts/${postData.id}`
-              },
-              'keywords': postData.tags?.join(', '),
-              'articleSection': 'Party Planning',
-              'isAccessibleForFree': 'True'
-            })
-          }}
-        />
       </Head>
+      
+      {/* Add the SchemaMarkup component */}
+      <SchemaMarkup postData={postData} />
       
       <article className={styles['blog-post']}>
         <h1 className={styles['post-title']}>{postData.title}</h1>
