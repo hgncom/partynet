@@ -4,7 +4,7 @@ date: '2025-05-05'
 author: 'Party Planning Expert'
 excerpt: >
   Discover smart strategies for hosting unforgettable parties on a budget! This guide covers affordable decor, food hacks, DIY tips, and more—so you can celebrate big without overspending.
-featuredImage: '/images/budget-party-guide.jpg'
+featuredImage: 'https://plus.unsplash.com/premium_photo-1681589453747-53fd893fa420?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 tags: ['budget party', 'affordable celebration', 'party planning', 'DIY party']
 ---
 
