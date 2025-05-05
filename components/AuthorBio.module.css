@@ -1,0 +1,105 @@
+.authorBio {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e75480;
+}
+
+.authorImageContainer {
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.authorImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #e75480;
+}
+
+.roundedImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.authorInfo {
+  flex-grow: 1;
+}
+
+.authorName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+}
+
+.authorRole {
+  font-size: 0.95rem;
+  color: #e75480;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.authorCredentials {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 0.75rem 0;
+  font-style: italic;
+}
+
+.authorBioText {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  margin: 0 0 1rem 0;
+}
+
+.expertiseAreas {
+  margin-top: 0.5rem;
+}
+
+.expertiseLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.expertiseList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.expertiseItem {
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.5rem 0.5rem 0;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .authorBio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .authorImageContainer {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .expertiseList {
+    justify-content: center;
+  }
+}

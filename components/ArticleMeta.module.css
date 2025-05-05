@@ -1,0 +1,29 @@
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.date {
+  font-weight: 500;
+  color: #e75480;
+}
+.author {
+  font-style: italic;
+}
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+.tag {
+  background: #f9d423;
+  color: #333;
+  border-radius: 999px;
+  padding: 0.25em 0.85em;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}

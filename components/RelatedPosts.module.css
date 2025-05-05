@@ -1,0 +1,31 @@
+.relatedSection {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+.heading {
+  font-size: 1.25rem;
+  color: #e75480;
+  margin-bottom: 1rem;
+}
+.relatedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.relatedItem {
+  margin: 0;
+}
+.relatedLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.18s;
+}
+.relatedLink:hover, .relatedLink:focus {
+  color: #c03260;
+  text-decoration: underline;
+}
