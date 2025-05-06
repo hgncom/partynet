@@ -65,7 +65,6 @@ const ToolsPage = () => {
       default:
         return <BudgetCalculator />;
     }
-  }
   };
 
   return (
