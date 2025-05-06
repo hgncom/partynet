@@ -55,24 +55,27 @@ export default function Post({ postData }) {
           { name: 'Home', path: '/', position: 1 },
           // Find the first tag that matches a category and use it
           ...(postData.tags && postData.tags.some(tag => {
+            if (!tag || typeof tag !== 'string') return false;
             return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
               tag.toLowerCase().includes(cat)
             );
           }) ? [{
             name: postData.tags.find(tag => {
+              if (!tag || typeof tag !== 'string') return false;
               return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
                 tag.toLowerCase().includes(cat)
               );
-            }),
+            }) || 'Category',
             path: (() => {
               // Helper function to determine category path
               const matchingTag = postData.tags.find(tag => {
+                if (!tag || typeof tag !== 'string') return false;
                 return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
                   tag.toLowerCase().includes(cat)
                 );
               });
               
-              const tagLower = matchingTag.toLowerCase();
+              const tagLower = matchingTag ? matchingTag.toLowerCase() : '';
               
               if (tagLower.includes('birthday')) return '/categories/birthday';
               if (tagLower.includes('wedding')) return '/categories/wedding';
