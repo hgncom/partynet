@@ -19,18 +19,80 @@ Beautiful party decorations don't need to be expensive or time-consuming. With a
 
 According to a [2024 survey by Craft & Hobby Association](https://www.craftandhobby.org/), having a well-stocked craft supply kit can save the average party host $75-120 per event. Keep these versatile supplies on hand for last-minute party decorating:
 
-| Supply | Estimated Cost | Versatility Rating | Where to Find Deals |
-|--------|----------------|-------------------|--------------------|
-| Colored paper and cardstock | $8-15 for multi-pack | ★★★★★ | Craft stores, dollar stores |
-| Scissors and craft knife | $10-25 | ★★★★★ | Office supply stores |
-| Glue (stick, hot glue gun, and liquid) | $10-20 total | ★★★★★ | Craft stores, hardware stores |
-| String, twine, or fishing line | $3-8 per roll | ★★★★☆ | Dollar stores, craft stores |
-| Tape (regular, washi, and double-sided) | $5-15 total | ★★★★★ | Office supply stores |
-| Basic craft paint and brushes | $15-25 for starter set | ★★★★☆ | Craft stores, art supply stores |
-| Mason jars and glass bottles | $0 (reused) to $15 | ★★★★★ | Thrift stores, grocery stores |
-| Balloons in various sizes | $3-10 for multi-pack | ★★★★☆ | Party stores, dollar stores |
-| Tissue paper in multiple colors | $2-5 for multi-pack | ★★★★★ | Dollar stores, gift shops |
-| Battery-operated string lights | $8-20 per strand | ★★★★★ | Home stores, online retailers |
+<div class="supplies-table">
+<table>
+  <thead>
+    <tr>
+      <th>Supply</th>
+      <th>Estimated Cost</th>
+      <th>Versatility Rating</th>
+      <th>Where to Find Deals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colored paper and cardstock</td>
+      <td>$8-15 for multi-pack</td>
+      <td>★★★★★</td>
+      <td>Craft stores, dollar stores</td>
+    </tr>
+    <tr>
+      <td>Scissors and craft knife</td>
+      <td>$10-25</td>
+      <td>★★★★★</td>
+      <td>Office supply stores</td>
+    </tr>
+    <tr>
+      <td>Glue (stick, hot glue gun, and liquid)</td>
+      <td>$10-20 total</td>
+      <td>★★★★★</td>
+      <td>Craft stores, hardware stores</td>
+    </tr>
+    <tr>
+      <td>String, twine, or fishing line</td>
+      <td>$3-8 per roll</td>
+      <td>★★★★☆</td>
+      <td>Dollar stores, craft stores</td>
+    </tr>
+    <tr>
+      <td>Tape (regular, washi, and double-sided)</td>
+      <td>$5-15 total</td>
+      <td>★★★★★</td>
+      <td>Office supply stores</td>
+    </tr>
+    <tr>
+      <td>Basic craft paint and brushes</td>
+      <td>$15-25 for starter set</td>
+      <td>★★★★☆</td>
+      <td>Craft stores, art supply stores</td>
+    </tr>
+    <tr>
+      <td>Mason jars and glass bottles</td>
+      <td>$0 (reused) to $15</td>
+      <td>★★★★★</td>
+      <td>Thrift stores, grocery stores</td>
+    </tr>
+    <tr>
+      <td>Balloons in various sizes</td>
+      <td>$3-10 for multi-pack</td>
+      <td>★★★★☆</td>
+      <td>Party stores, dollar stores</td>
+    </tr>
+    <tr>
+      <td>Tissue paper in multiple colors</td>
+      <td>$2-5 for multi-pack</td>
+      <td>★★★★★</td>
+      <td>Dollar stores, gift shops</td>
+    </tr>
+    <tr>
+      <td>Battery-operated string lights</td>
+      <td>$8-20 per strand</td>
+      <td>★★★★★</td>
+      <td>Home stores, online retailers</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ---
 

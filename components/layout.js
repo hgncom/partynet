@@ -1,12 +1,18 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/layout.module.css';
+import SeoPerformanceHead from './SeoPerformanceHead';
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <SeoPerformanceHead />
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        {/* Preconnect to external domains for faster resource loading */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta
           name="description"
           content="Party.net - Your ultimate guide to parties and celebrations"
@@ -27,6 +33,7 @@ export default function Layout({ children, home }) {
               <li><Link href="/categories/birthday" className={styles.navLink}>Birthday</Link></li>
               <li><Link href="/categories/wedding" className={styles.navLink}>Wedding</Link></li>
               <li><Link href="/categories/holiday" className={styles.navLink}>Holiday</Link></li>
+              <li><Link href="/tools" className={styles.navLink}>Planning Tools</Link></li>
               <li><Link href="/about" className={styles.navLink}>About</Link></li>
             </ul>
           </nav>
@@ -49,6 +56,15 @@ export default function Layout({ children, home }) {
               <li><Link href="/categories/wedding">Wedding Celebrations</Link></li>
               <li><Link href="/categories/holiday">Holiday Events</Link></li>
               <li><Link href="/categories/corporate">Corporate Gatherings</Link></li>
+            </ul>
+          </div>
+          
+          <div className={styles.footerSection}>
+            <h3>Planning Tools</h3>
+            <ul>
+              <li><Link href="/tools#budget">Budget Calculator</Link></li>
+              <li><Link href="/tools#checklist">Planning Checklist</Link></li>
+              <li><Link href="/tools#guestlist">Guest List Manager</Link></li>
             </ul>
           </div>
           

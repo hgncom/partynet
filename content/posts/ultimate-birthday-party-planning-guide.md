@@ -30,6 +30,8 @@ Birthdays are more than just another day—they’re a chance to make someone fe
 - [ ] Confirm details
 - [ ] Enjoy the party!
 
+> **Stay organized with our [Interactive Party Planning Checklist](/tools#checklist)** - a comprehensive tool that helps you track your progress and never miss a detail!
+
 ---
 
 ## 1. Set a Realistic Budget
@@ -43,7 +45,7 @@ A clear budget is your party's foundation. It helps you prioritize what matters 
 
 **Where to allocate:** Typically, food and drinks (40%), venue (30%), decorations (15%), entertainment/activities (10%), and miscellaneous (5%).
 
-**Pro Tip:** Use a simple spreadsheet or a free party budget app like Splitwise or Mint to track expenses. Always add a 10–15% buffer for surprises.
+**Pro Tip:** Use our [Party Budget Calculator](/tools#budget) to plan your expenses, visualize spending categories, and ensure you stay within your limits. Always add a 10–15% buffer for surprises.
 
 ---
 
@@ -66,9 +68,11 @@ Pick a date that works for your VIP and most guests. Book venues early, especial
 
 ---
 
-## 4. Make a Guest List
+## 4. Create Your Guest List
 
-Decide if you want an intimate gathering or a big bash. Get input from the birthday person, especially for kids and teens.
+The right number of guests sets the tone for your party. For kids' parties, a common guideline is inviting the same number of children as the age they're turning (up to age 10).
+
+> **Manage your invitations easily with our [Guest List Manager](/tools#guestlist)** - track RSVPs, dietary restrictions, and keep all your guest information organized in one place.
 
 ---
 
@@ -134,7 +138,19 @@ Remember to take photos, but also be present enough to create memories. Delegate
 
 ---
 
-**Download our free printable party checklist and budget planner at Party.net/resources.**
+**Try our free interactive party planning tools at [Party.net/tools](/tools) - including a Budget Calculator, Planning Checklist, and Guest List Manager to make your party planning stress-free!**
+
+---
+
+## Interactive Party Planning Tools
+
+Make your birthday party planning easier with our suite of free interactive tools:
+
+1. **[Budget Calculator](/tools#budget)** - Plan your party finances with customizable categories and visual breakdowns
+2. **[Planning Checklist](/tools#checklist)** - Track your progress with our comprehensive task manager designed specifically for birthday parties
+3. **[Guest List Manager](/tools#guestlist)** - Organize attendees, track RSVPs, and manage all guest information in one place
+
+No sign-up required! Simply visit our [Tools Page](/tools) to get started.
 
 ---
 

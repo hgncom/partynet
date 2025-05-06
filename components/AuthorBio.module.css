@@ -3,23 +3,24 @@
   align-items: flex-start;
   background-color: #f9f9f9;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-left: 4px solid #e75480;
+  padding: 2rem;
+  margin: 2.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #4a6fa5;
 }
 
 .authorImageContainer {
   flex-shrink: 0;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
 
 .authorImage {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #e75480;
+  border: 3px solid #4a6fa5;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .roundedImage {
@@ -32,21 +33,21 @@
 }
 
 .authorName {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #333;
   margin: 0 0 0.25rem 0;
 }
 
 .authorRole {
-  font-size: 0.95rem;
-  color: #e75480;
+  font-size: 1rem;
+  color: #4a6fa5;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
 }
 
 .authorCredentials {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
   margin: 0 0 0.75rem 0;
   font-style: italic;
@@ -59,47 +60,127 @@
   margin: 0 0 1rem 0;
 }
 
-.expertiseAreas {
-  margin-top: 0.5rem;
+.expertiseAreas,
+.educationSection,
+.publicationsSection,
+.awardsSection,
+.socialSection {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
 .expertiseLabel {
   font-size: 0.9rem;
   font-weight: 600;
   color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
-.expertiseList {
+.expertiseList,
+.publicationsList,
+.awardsList,
+.socialList {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
   margin: 0.5rem 0 0 0;
 }
 
 .expertiseItem {
-  background-color: #f0f0f0;
-  border: 1px solid #e0e0e0;
+  background-color: #e8f1fd;
+  padding: 0.3rem 0.8rem;
   border-radius: 20px;
-  padding: 0.25rem 0.75rem;
-  margin: 0 0.5rem 0.5rem 0;
-  font-size: 0.8rem;
-  color: #555;
+  font-size: 0.85rem;
+  color: #4a6fa5;
 }
 
-@media (max-width: 600px) {
+.educationText {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5;
+}
+
+.publicationItem,
+.awardItem {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.publicationItem:before,
+.awardItem:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4a6fa5;
+}
+
+.socialItem {
+  margin-right: 1rem;
+}
+
+.socialLink {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #4a6fa5;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
   .authorBio {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 1.5rem;
   }
   
   .authorImageContainer {
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    align-self: center;
   }
   
-  .expertiseList {
+  .authorInfo {
+    width: 100%;
+  }
+  
+  .authorName,
+  .authorRole,
+  .authorCredentials {
+    text-align: center;
+  }
+  
+  .authorBioText {
+    text-align: left;
+  }
+  
+  .expertiseList,
+  .publicationsList,
+  .awardsList,
+  .socialList {
     justify-content: center;
+  }
+  
+  .publicationItem,
+  .awardItem {
+    text-align: left;
   }
 }

@@ -10,7 +10,12 @@
     "export": "next build && next export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["party", "blog", "events", "celebrations"],
+  "keywords": [
+    "party",
+    "blog",
+    "events",
+    "celebrations"
+  ],
   "author": "Party.net",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +25,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "uuid": "^11.1.0"
   }
 }

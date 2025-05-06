@@ -26,13 +26,15 @@ You don’t need a huge budget to throw a memorable party! With a little creativ
 - [ ] Organize simple, fun activities
 - [ ] Track expenses as you go
 
+> **Stay on budget with our [Interactive Budget Calculator](/tools#budget)** - a free tool that helps you allocate funds across different categories and track your spending in real-time!
+
 ---
 
 ## 1. Start with a Realistic Budget
 
-Decide how much you can comfortably spend. List your priorities—maybe it’s great food, or a special cake. Allocate funds accordingly and leave a small buffer for surprises.
+Decide how much you can comfortably spend. List your priorities—maybe it's great food, or a special cake. Allocate funds accordingly and leave a small buffer for surprises.
 
-**Pro Tip:** Use a free online budget planner or spreadsheet to monitor your spending.
+**Pro Tip:** Use our [Party Budget Calculator](/tools#budget) to easily allocate your funds across different categories, visualize your spending, and ensure you stay within your limits.
 
 ---
 
@@ -47,6 +49,8 @@ Decide how much you can comfortably spend. List your priorities—maybe it’s g
 ## 3. Send Digital Invitations
 
 Save on printing and postage by using free or low-cost digital invites (Canva, Evite, or even a group chat).
+
+> **Manage your guest list efficiently with our [Guest List Manager](/tools#guestlist)** - track RSVPs, send reminders, and keep all your guest information organized in one place.
 
 ---
 
@@ -132,6 +136,18 @@ Save on printing and postage by using free or low-cost digital invites (Canva, E
   - Photo booth with props we made from cardstock ($5)
 
 Everyone said it was one of the most fun and personal parties they'd attended all year!"
+
+---
+
+## Party Planning Tools
+
+Make your budget party planning easier with our free interactive tools:
+
+1. **[Budget Calculator](/tools#budget)** - Plan your party finances with customizable categories and track spending in real-time
+2. **[Planning Checklist](/tools#checklist)** - Stay organized with our comprehensive task manager
+3. **[Guest List Manager](/tools#guestlist)** - Organize attendees and track RSVPs in one place
+
+No sign-up required! Simply visit our [Tools Page](/tools) to get started.
 
 ---
 

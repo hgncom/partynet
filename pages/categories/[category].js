@@ -4,6 +4,7 @@ import { getSortedPostsData } from '../../lib/posts';
 import { getAllCategorySlugs, getCategoryData, getPostsByCategory } from '../../lib/categories';
 import Layout from '../../components/layout';
 import OptimizedImage from '../../components/OptimizedImage';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import styles from '../../styles/categories.module.css';
 
 export default function Category({ categoryData, posts }) {
@@ -32,6 +33,14 @@ export default function Category({ categoryData, posts }) {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image || '/images/party-default.jpg'} />
       </Head>
+      
+      {/* Add breadcrumbs with schema markup for better SEO */}
+      <Breadcrumbs 
+        customCrumbs={[
+          { name: 'Home', path: '/', position: 1 },
+          { name: title, path: `/categories/${categoryData.slug}`, position: 2, isCurrentPage: true }
+        ]}
+      />
       
       <section className={styles['category-header']}>
         <h1>{title}</h1>

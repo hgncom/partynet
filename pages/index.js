@@ -1,21 +1,58 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { getSortedPostsData } from '../lib/posts';
 import Layout from '../components/layout';
 import HeroSection from '../components/HeroSection';
-import Date from '../components/date';
+import OptimizedImage from '../components/OptimizedImage';
+import WebsiteSchema from '../components/WebsiteSchema';
+import SeoPerformanceHead from '../components/SeoPerformanceHead';
+import LocalBusinessSchema from '../components/LocalBusinessSchema';
+import EnhancedFAQSchema from '../components/EnhancedFAQSchema';
+import { getSortedPostsData } from '../lib/posts';
+import { getAllCategories } from '../lib/categories';
+import styles from '../styles/home.module.css';
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, categories }) {
+  // Common FAQs for the homepage
+  const homepageFaqs = [
+    {
+      question: "What services does Party.net offer?",
+      answer: "Party.net provides comprehensive party planning resources including themes, decoration ideas, invitation templates, catering suggestions, and step-by-step planning guides for all types of celebrations."
+    },
+    {
+      question: "How far in advance should I start planning my party?",
+      answer: "For small gatherings, we recommend starting 4-6 weeks in advance. For larger events like weddings or milestone celebrations, begin planning 3-6 months ahead to ensure venue availability and proper preparation time."
+    },
+    {
+      question: "Does Party.net offer personalized party planning services?",
+      answer: "Yes! In addition to our free resources, we offer personalized consultation services where our expert planners can help design your perfect event based on your specific needs and budget."
+    },
+    {
+      question: "How can I find party ideas for a specific theme?",
+      answer: "You can browse our extensive category pages or use our search function to find ideas for specific themes. Each theme includes decoration suggestions, food ideas, activity recommendations, and more."
+    }
+  ];
+
+  // Featured posts for the homepage
+  const featuredPosts = allPostsData.slice(0, 6);
+  
   return (
     <Layout home>
       <Head>
-        <title>Party.net - Your Ultimate Guide to Parties & Celebrations</title>
-        <meta name="description" content="Discover the best party ideas, planning tips, and celebration inspiration at Party.net - your go-to resource for creating unforgettable events." />
-        <meta name="keywords" content="party ideas, event planning, celebrations, party themes, party planning guide" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Party.net - Your Ultimate Party Planning Resource</title>
+        <meta name="description" content="Discover expert party planning ideas, themes, decorations, and step-by-step guides for birthdays, weddings, and special occasions. Create memorable celebrations with Party.net." />
+        <meta name="keywords" content="party planning, birthday parties, wedding planning, event themes, party decorations, celebration ideas" />
+        <link rel="canonical" href="https://partynet.netlify.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Party.net - Your Ultimate Guide to Parties & Celebrations" />
+        <meta name="twitter:description" content="Discover the best party ideas, planning tips, and celebration inspiration at Party.net - your go-to resource for creating unforgettable events." />
+        <meta name="twitter:image" content="https://partynet.netlify.app/images/party-default.jpg" />
       </Head>
-
-      <HeroSection />
+      
+      {/* Add Website Schema for better search engine understanding */}
+      <WebsiteSchema />
+      <LocalBusinessSchema />
+      
+      <HeroSection categories={categories} />
 
       <section className="featured-categories">
         <h2>Explore Party Categories</h2>
