@@ -4,7 +4,7 @@ import { getAllCategories } from '../lib/categories';
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-  const baseUrl = 'https://partynet.netlify.app';
+  const baseUrl = 'https://party.net';
   const allPosts = getSortedPostsData();
   const allCategories = getAllCategories();
   const currentDate = new Date().toISOString();
