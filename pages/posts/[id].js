@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRef } from 'react';
 import { getAllPostIds, getPostData, getSortedPostsData } from '../../lib/posts';
+import { tagIncludes, safeTagToLower, anyTagIncludesAnyCategory, findTagMatchingCategory } from '../../lib/utils';
 import Layout from '../../components/layout';
 import ArticleMeta from '../../components/ArticleMeta';
 import SchemaMarkup from '../../components/SchemaMarkup';
@@ -54,31 +55,12 @@ export default function Post({ postData }) {
         customCrumbs={[
           { name: 'Home', path: '/', position: 1 },
           // Find the first tag that matches a category and use it
-          ...(postData.tags && postData.tags.some(tag => {
-            if (!tag || typeof tag !== 'string') return false;
-            return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
-              tag.toLowerCase().includes(cat)
-            );
-          }) ? [{
-            name: (() => {
-              const tag = postData.tags.find(tag => {
-                if (!tag || typeof tag !== 'string') return false;
-                return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
-                  tag.toLowerCase().includes(cat)
-                );
-              });
-              return tag || 'Category';
-            })(),
+          ...(postData.tags && anyTagIncludesAnyCategory(postData.tags, ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor']) ? [{
+            name: findTagMatchingCategory(postData.tags, ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor']) || 'Category',
             path: (() => {
               // Helper function to determine category path
-              const matchingTag = postData.tags.find(tag => {
-                if (!tag || typeof tag !== 'string') return false;
-                return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
-                  tag.toLowerCase().includes(cat)
-                );
-              });
-              
-              const tagLower = matchingTag ? matchingTag.toLowerCase() : '';
+              const matchingTag = findTagMatchingCategory(postData.tags, ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor']);
+              const tagLower = safeTagToLower(matchingTag);
               
               if (tagLower.includes('birthday')) return '/categories/birthday';
               if (tagLower.includes('wedding')) return '/categories/wedding';
@@ -145,15 +127,13 @@ export default function Post({ postData }) {
             {postData.tags && postData.tags.map(tag => {
               // Map tags to categories
               let categoryLink = null;
-              if (typeof tag === 'string') {
-                if (tag.includes('birthday')) {
-                  categoryLink = <Link href="/categories/birthday" key="birthday">Birthday Party Ideas</Link>;
-                } else if (tag.includes('garden') || tag.includes('outdoor')) {
-                  categoryLink = <Link href="/categories/garden" key="garden">Garden Party Ideas</Link>;
-                } else if (tag.includes('budget') || tag.includes('affordable')) {
-                  categoryLink = <Link href="/categories/budget" key="budget">Budget-Friendly Party Ideas</Link>;
-                }
-              } 
+              if (tagIncludes(tag, 'birthday')) {
+                categoryLink = <Link href="/categories/birthday" key="birthday">Birthday Party Ideas</Link>;
+              } else if (tagIncludes(tag, 'garden') || tagIncludes(tag, 'outdoor')) {
+                categoryLink = <Link href="/categories/garden" key="garden">Garden Party Ideas</Link>;
+              } else if (tagIncludes(tag, 'budget') || tagIncludes(tag, 'affordable')) {
+                categoryLink = <Link href="/categories/budget" key="budget">Budget-Friendly Party Ideas</Link>;
+              }
               return categoryLink;
             }).filter(Boolean)}
           </div>
