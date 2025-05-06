@@ -52,14 +52,14 @@ export default function Category({ categoryData, posts }) {
         
         {posts.length > 0 ? (
           <ul className={styles['post-list']}>
-            {posts.map(({ id, date, title, excerpt, featuredImage }) => (
+            {posts.map(({ id, date, title, excerpt, featuredImage, featuredImageAlt }) => (
               <li className={styles['post-item']} key={id}>
                 <Link href={`/posts/${id}`} className={styles['post-link']}>
                   {featuredImage && (
                     <div className={styles['post-thumbnail']}>
                       <OptimizedImage 
                         src={featuredImage} 
-                        alt={post.featuredImageAlt || title} 
+                        alt={featuredImageAlt || title} 
                         className={styles['thumbnail-image']}
                       />
                     </div>
