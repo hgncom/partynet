@@ -1,0 +1,14 @@
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Ensure static files in /public are served at root
+[[redirects]]
+  from = "/googleeadcce76fcdf30b1.html"
+  to = "/public/googleeadcce76fcdf30b1.html"
+  status = 200

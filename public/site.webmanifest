@@ -1,0 +1,25 @@
+{
+  "name": "Party.net - Ultimate Party Planning Resource",
+  "short_name": "Party.net",
+  "description": "Expert party planning tips, ideas, and guides for all occasions",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#4a6fa5",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "categories": ["lifestyle", "party planning", "events", "celebrations"]
+}

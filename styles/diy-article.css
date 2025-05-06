@@ -1,0 +1,73 @@
+/* Custom styles for the DIY party decorations article */
+
+/* Table styling */
+.supplies-table {
+  margin: 2rem 0;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.supplies-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.supplies-table th {
+  background-color: #4a6fa5;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.supplies-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.supplies-table tr:last-child td {
+  border-bottom: none;
+}
+
+.supplies-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.supplies-table tr:hover {
+  background-color: #f0f7ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .supplies-table {
+    margin: 1.5rem -15px;
+    width: calc(100% + 30px);
+    border-radius: 0;
+  }
+  
+  .supplies-table th,
+  .supplies-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .supplies-table {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  
+  .supplies-table th {
+    background-color: #eee !important;
+    color: black !important;
+  }
+  
+  .supplies-table td,
+  .supplies-table th {
+    border: 1px solid #ddd;
+  }
+}

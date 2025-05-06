@@ -1,0 +1,78 @@
+.tableOfContents {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-left: 4px solid #4a6fa5;
+}
+
+.tocTitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.tocList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.tocItem {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.tocSubItem {
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.tocLink {
+  color: #4a6fa5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+.tocLink:hover {
+  color: #2c4162;
+  text-decoration: underline;
+}
+
+.tocActive .tocLink {
+  color: #2c4162;
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .tableOfContents {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    width: 240px;
+    margin-left: 2rem;
+    flex-shrink: 0;
+    align-self: flex-start;
+    z-index: 1;
+    /* Ensure it doesn't scroll past the end of the content */
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+@media (max-width: 767px) {
+  .tableOfContents {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+}

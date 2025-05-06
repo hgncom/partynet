@@ -1,0 +1,208 @@
+.toolsPageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.toolsHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  color: #4a6fa5;
+  margin-bottom: 1rem;
+}
+
+.pageDescription {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.toolsNavigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.toolTab {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 1.5rem;
+  background-color: #fff;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toolTab:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #d0e0f7;
+}
+
+.activeTab {
+  border-color: #4a6fa5;
+  background-color: #f0f7ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.toolIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.toolName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.toolDescription {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.toolContent {
+  margin-bottom: 4rem;
+  min-height: 500px;
+}
+
+.toolsInfo {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.infoTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.infoCard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+}
+
+.infoIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.infoCard h3 {
+  font-size: 1.3rem;
+  color: #4a6fa5;
+  margin-bottom: 1rem;
+}
+
+.infoCard p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+.testimonial cite {
+  font-weight: 600;
+  color: #4a6fa5;
+}
+
+.toolsCta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+}
+
+.toolsCta h2 {
+  font-size: 1.8rem;
+  color: #4a6fa5;
+  margin-bottom: 1rem;
+}
+
+.toolsCta p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .toolsPageContainer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+  }
+  
+  .toolsNavigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .toolTab {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .toolsCta {
+    padding: 2rem 1rem;
+  }
+}

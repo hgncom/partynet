@@ -1,0 +1,273 @@
+.adminContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 1rem;
+}
+
+.authForm {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.authForm h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #4a6fa5;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+.button {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #3a5a8a;
+}
+
+.error {
+  background-color: #fff2f2;
+  color: #d32f2f;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+  border-left: 4px solid #d32f2f;
+}
+
+.commentsSection {
+  margin-top: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.refreshButton,
+.logoutButton {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.refreshButton {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+}
+
+.refreshButton:hover {
+  background-color: #3a5a8a;
+}
+
+.refreshButton:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.logoutButton {
+  background-color: transparent;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.logoutButton:hover {
+  background-color: #fff2f2;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+.commentsList {
+  margin-top: 1rem;
+}
+
+.statsBar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.statsBar span {
+  font-weight: 600;
+  color: #555;
+}
+
+.commentCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #ddd;
+}
+
+.commentMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.commentAuthor {
+  font-weight: 600;
+  color: #333;
+}
+
+.commentEmail {
+  color: #777;
+  font-style: italic;
+}
+
+.commentDate {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.postLink {
+  margin-left: auto;
+  color: #4a6fa5;
+  text-decoration: underline;
+}
+
+.commentContent {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.approveButton,
+.rejectButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.approveButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.approveButton:hover {
+  background-color: #388e3c;
+}
+
+.rejectButton {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+}
+
+.rejectButton:hover {
+  background-color: #f57c00;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.noComments {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .commentMeta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .postLink {
+    margin-left: 0;
+  }
+  
+  .actionButtons {
+    flex-wrap: wrap;
+  }
+  
+  .approveButton,
+  .rejectButton,
+  .deleteButton {
+    flex: 1;
+    text-align: center;
+  }
+}

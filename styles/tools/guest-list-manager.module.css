@@ -1,0 +1,602 @@
+.guestListManager {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.toolTitle {
+  font-size: 2rem;
+  color: #4a6fa5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.toolDescription {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.eventDetails {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #4a6fa5;
+}
+
+.detailsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.detailField {
+  flex: 1;
+  min-width: 200px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #4a6fa5;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+/* Stats Dashboard */
+.statsDashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  flex: 1;
+  min-width: 150px;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.confirmedCard {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.confirmedCard .statValue {
+  color: #2e7d32;
+}
+
+.pendingCard {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffc107;
+}
+
+.pendingCard .statValue {
+  color: #ff8f00;
+}
+
+.declinedCard {
+  background-color: #ffebee;
+  border-left: 4px solid #f44336;
+}
+
+.declinedCard .statValue {
+  color: #c62828;
+}
+
+.totalCard {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.totalCard .statValue {
+  color: #0d47a1;
+}
+
+.capacityIndicator {
+  margin-top: 0.5rem;
+}
+
+.capacityLabel {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.capacityBar {
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.capacityFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Form Section */
+.formSection {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.75rem;
+}
+
+.guestForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 200px;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.submitButton {
+  background-color: #4a6fa5;
+  color: white;
+  flex: 1;
+}
+
+.submitButton:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-2px);
+}
+
+.cancelButton {
+  background-color: #f1f1f1;
+  color: #666;
+}
+
+.cancelButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Guest List Section */
+.guestListSection {
+  margin-bottom: 2rem;
+}
+
+.listControls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.searchFilter {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filterSelect {
+  min-width: 150px;
+}
+
+.bulkActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bulkButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.bulkButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.confirmButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.confirmButton:hover:not(:disabled) {
+  background-color: #388e3c;
+}
+
+.pendingButton {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.pendingButton:hover:not(:disabled) {
+  background-color: #ffa000;
+}
+
+.declineButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.declineButton:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.deleteButton {
+  background-color: #757575;
+  color: white;
+}
+
+.deleteButton:hover:not(:disabled) {
+  background-color: #616161;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.guestTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.guestTable th,
+.guestTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.guestTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+
+.sortableHeader {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortableHeader:hover {
+  background-color: #e9ecef;
+}
+
+.sortIcon {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.guestRow:hover {
+  background-color: #f8f9fa;
+}
+
+.checkboxCell {
+  width: 40px;
+  text-align: center;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.nameCell {
+  min-width: 180px;
+}
+
+.guestName {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.dietaryTag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: #e0f7fa;
+  color: #00838f;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+.contactCell {
+  min-width: 200px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.plusOnesCell {
+  text-align: center;
+}
+
+.rsvpSelect {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.pending {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.confirmed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.declined {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.actionsCell {
+  white-space: nowrap;
+  width: 120px;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s;
+}
+
+.editButton {
+  background-color: #4a6fa5;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #3a5a8a;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem 0;
+  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+}
+
+/* Export Section */
+.exportSection {
+  margin-top: 2rem;
+}
+
+.exportActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.exportButton,
+.printButton,
+.resetButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.exportButton {
+  background-color: #4a6fa5;
+  color: white;
+}
+
+.exportButton:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-2px);
+}
+
+.printButton {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.printButton:hover {
+  background-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+.resetButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.resetButton:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+/* Print styles */
+@media print {
+  .guestListManager {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .formSection,
+  .bulkActions,
+  .exportSection,
+  .searchFilter,
+  .actionsCell,
+  .checkboxCell {
+    display: none;
+  }
+  
+  .guestTable th:last-child,
+  .guestTable td:last-child,
+  .guestTable th:first-child,
+  .guestTable td:first-child {
+    display: none;
+  }
+  
+  .statsDashboard {
+    flex-wrap: nowrap;
+  }
+  
+  .statCard {
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .guestListManager {
+    padding: 1.5rem;
+  }
+  
+  .toolTitle {
+    font-size: 1.6rem;
+  }
+  
+  .detailsRow,
+  .formRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .statsDashboard {
+    flex-direction: column;
+  }
+  
+  .listControls {
+    flex-direction: column;
+  }
+  
+  .searchFilter {
+    flex-direction: column;
+  }
+  
+  .bulkActions {
+    justify-content: space-between;
+  }
+  
+  .bulkButton {
+    flex: 1;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  
+  .exportActions {
+    flex-direction: column;
+  }
+  
+  .exportButton,
+  .printButton,
+  .resetButton {
+    width: 100%;
+  }
+}
