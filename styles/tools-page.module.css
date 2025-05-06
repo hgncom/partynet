@@ -226,11 +226,6 @@
   }
 }
 
-.infoGrid {
-    grid-template-columns: 1fr;
-  }
-  
   .toolsCta {
     padding: 2rem 1rem;
   }
-}
