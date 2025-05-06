@@ -60,12 +60,15 @@ export default function Post({ postData }) {
               tag.toLowerCase().includes(cat)
             );
           }) ? [{
-            name: postData.tags.find(tag => {
-              if (!tag || typeof tag !== 'string') return false;
-              return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
-                tag.toLowerCase().includes(cat)
-              );
-            }) || 'Category',
+            name: (() => {
+              const tag = postData.tags.find(tag => {
+                if (!tag || typeof tag !== 'string') return false;
+                return ['birthday', 'wedding', 'holiday', 'budget', 'corporate', 'outdoor'].some(cat => 
+                  tag.toLowerCase().includes(cat)
+                );
+              });
+              return tag || 'Category';
+            })(),
             path: (() => {
               // Helper function to determine category path
               const matchingTag = postData.tags.find(tag => {
@@ -142,13 +145,15 @@ export default function Post({ postData }) {
             {postData.tags && postData.tags.map(tag => {
               // Map tags to categories
               let categoryLink = null;
-              if (tag.includes('birthday')) {
-                categoryLink = <Link href="/categories/birthday" key="birthday">Birthday Party Ideas</Link>;
-              } else if (tag.includes('garden') || tag.includes('outdoor')) {
-                categoryLink = <Link href="/categories/garden" key="garden">Garden Party Ideas</Link>;
-              } else if (tag.includes('budget') || tag.includes('affordable')) {
-                categoryLink = <Link href="/categories/budget" key="budget">Budget-Friendly Party Ideas</Link>;
-              }
+              if (typeof tag === 'string') {
+                if (tag.includes('birthday')) {
+                  categoryLink = <Link href="/categories/birthday" key="birthday">Birthday Party Ideas</Link>;
+                } else if (tag.includes('garden') || tag.includes('outdoor')) {
+                  categoryLink = <Link href="/categories/garden" key="garden">Garden Party Ideas</Link>;
+                } else if (tag.includes('budget') || tag.includes('affordable')) {
+                  categoryLink = <Link href="/categories/budget" key="budget">Budget-Friendly Party Ideas</Link>;
+                }
+              } 
               return categoryLink;
             }).filter(Boolean)}
           </div>
