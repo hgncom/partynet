@@ -28,7 +28,7 @@ export default function ReviewSchema({
   publisher = {
     name: 'Party.net',
     type: 'Organization',
-    logo: 'https://partynet.netlify.app/images/logo.png'
+    logo: 'https://partynet.netlify.app/images/party-default.jpg'
   },
   reviewBody = '',
   datePublished = new Date().toISOString().split('T')[0],

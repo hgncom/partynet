@@ -154,13 +154,6 @@ export default function Post({ postData }) {
       
       {/* Comments section */}
       <Comments postId={postData.id} />
-      
-      {/* Enhanced Related Posts with intelligent tag matching */}
-      <EnhancedRelatedPosts 
-        currentPostId={postData.id} 
-        currentTags={postData.tags || []} 
-        allPosts={postData.allPosts || []} 
-      />
     </Layout>
   );
 }

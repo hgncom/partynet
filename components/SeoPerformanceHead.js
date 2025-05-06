@@ -18,8 +18,7 @@ export default function SeoPerformanceHead() {
       <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
       
       {/* Preload critical assets */}
-      <link rel="preload" href="/images/logo.png" as="image" />
-      <link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      {/* System fonts are used instead of custom fonts for better performance */}
       
       {/* Meta tags for better SEO */}
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

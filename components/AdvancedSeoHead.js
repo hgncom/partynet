@@ -64,7 +64,7 @@ export default function AdvancedSeoHead({
       {/* Preload critical fonts */}
       <link 
         rel="preload" 
-        href="/fonts/montserrat-v15-latin-regular.woff2" 
+        href="/fonts/system-font.woff2" 
         as="font" 
         type="font/woff2" 
         crossOrigin="anonymous" 
@@ -95,7 +95,7 @@ export default function AdvancedSeoHead({
         /* Critical path CSS */
         body {
           margin: 0;
-          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size: 16px;
           line-height: 1.5;
           color: #333;

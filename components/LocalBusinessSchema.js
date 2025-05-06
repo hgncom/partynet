@@ -7,7 +7,7 @@ import React from 'react';
 export default function LocalBusinessSchema({
   businessName = "Party.net Planning Services",
   description = "Professional party planning services for all occasions",
-  image = "https://partynet.netlify.app/images/logo.png",
+  image = "https://partynet.netlify.app/images/party-default.jpg",
   telephone = "+1-555-123-4567",
   email = "contact@partynet.netlify.app",
   url = "https://partynet.netlify.app",

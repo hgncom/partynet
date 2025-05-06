@@ -40,7 +40,7 @@ export default function SchemaMarkup({ postData }) {
       name: 'Party.net',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://partynet.netlify.app/images/logo.png'
+        url: 'https://partynet.netlify.app/images/party-default.jpg'
       }
     },
     mainEntityOfPage: {

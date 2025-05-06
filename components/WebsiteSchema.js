@@ -24,7 +24,7 @@ export default function WebsiteSchema() {
       name: 'Party.net',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://partynet.netlify.app/images/logo.png'
+        url: 'https://partynet.netlify.app/images/party-default.jpg'
       }
     },
     sameAs: [

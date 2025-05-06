@@ -26,9 +26,10 @@
 .logoText {
   font-family: var(--heading-font);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--primary-color);
+  font-weight: 800;
+  color: #c41e3a;
   margin-left: 0.5rem;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
 }
 
 .navigation {

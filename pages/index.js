@@ -7,6 +7,7 @@ import WebsiteSchema from '../components/WebsiteSchema';
 import SeoPerformanceHead from '../components/SeoPerformanceHead';
 import LocalBusinessSchema from '../components/LocalBusinessSchema';
 import EnhancedFAQSchema from '../components/EnhancedFAQSchema';
+import DateComponent from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
 import { getAllCategories } from '../lib/categories';
 import styles from '../styles/home.module.css';
@@ -85,7 +86,7 @@ export default function Home({ allPostsData, categories }) {
                 <h3>{title}</h3>
                 <p className="post-excerpt">{excerpt}</p>
                 <small className="post-date">
-                  <Date dateString={date} />
+                  <DateComponent dateString={date} />
                 </small>
               </Link>
             </li>

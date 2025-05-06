@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Layout from '../components/layout';
-import BudgetCalculator from '../components/tools/BudgetCalculator';
-import PlanningChecklist from '../components/tools/PlanningChecklist';
-import GuestListManager from '../components/tools/GuestListManager';
 import styles from '../styles/tools-page.module.css';
+
+// Dynamically import tool components with loading states
+const BudgetCalculator = dynamic(
+  () => import('../components/tools/BudgetCalculator'),
+  {
+    loading: () => <div className={styles.loading}>Loading Budget Calculator...</div>
+  }
+);
+
+const PlanningChecklist = dynamic(
+  () => import('../components/tools/PlanningChecklist'),
+  {
+    loading: () => <div className={styles.loading}>Loading Planning Checklist...</div>
+  }
+);
+
+const GuestListManager = dynamic(
+  () => import('../components/tools/GuestListManager'),
+  {
+    loading: () => <div className={styles.loading}>Loading Guest List Manager...</div>
+  }
+);
 
 /**
  * Interactive Party Planning Tools Page
@@ -45,6 +65,7 @@ const ToolsPage = () => {
       default:
         return <BudgetCalculator />;
     }
+  }
   };
 
   return (

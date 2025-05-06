@@ -21,32 +21,34 @@
 .title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #e75480;
+  color: #c41e3a;
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
 
 .description {
   font-size: 1.25rem;
-  color: #333;
+  color: #1a1a1a;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .ctaButton {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: #e75480;
-  color: #fff;
+  background: #d81b60;
+  color: #ffffff;
   font-weight: 700;
   border-radius: 999px;
   text-decoration: none;
   font-size: 1.1rem;
-  box-shadow: 0 4px 16px rgba(231,84,128,0.08);
+  box-shadow: 0 4px 16px rgba(216,27,96,0.2);
   transition: background 0.2s, transform 0.2s;
 }
 .ctaButton:hover, .ctaButton:focus {
-  background: #c03260;
+  background: #9e1244;
   transform: scale(1.05);
+  text-decoration: none;
 }
 
 .confetti {
