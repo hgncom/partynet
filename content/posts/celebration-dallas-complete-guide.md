@@ -4,7 +4,7 @@ date: '2025-05-07'
 author: 'Party Planning Expert'
 excerpt: >
   Planning a celebration in Dallas? Discover the city's finest venues, vendors, and event planning resources in this comprehensive guide. From elegant wedding locations to family-friendly party spots, explore everything you need for a memorable Dallas celebration.
-featuredImage: 'https://images.unsplash.com/photo-1545191342-748448e2a6b3?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+featuredImage: 'https://plus.unsplash.com/premium_photo-1697729753410-667607f7afd4?q=80&w=3732&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 featuredImageAlt: 'Dallas skyline at sunset with celebration fireworks, perfect for event planning'
 tags: ['dallas events', 'party venues', 'celebration planning', 'texas weddings', 'local event resources']
 ---
